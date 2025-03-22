@@ -27,7 +27,7 @@ for %%f in (*.dll) do (
     set DLLS=!DLLS! %%f
 )
 
-:: Запуск ILMerge с параметрами
+:: Запуск ILMerge с параметрами (/target:exe - для консольных программ, /target:winexe - для десктопных программ, скрывает консоль)
 %ILMERGE% /target:winexe /out:%OUTPUT% %TEMP_TARGET% %DLLS%
 
 :: Проверка успешности слияния
