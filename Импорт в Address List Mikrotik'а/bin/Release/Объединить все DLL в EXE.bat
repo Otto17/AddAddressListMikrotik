@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: Путь к ILMerge.exe
-set ILMERGE="C:\Users\Otto\.nuget\packages\ilmerge\3.0.41\tools\net452\ILMerge.exe"
+set ILMERGE="%USERPROFILE%\.nuget\packages\ilmerge\3.0.41\tools\net452\ILMerge.exe"
 
 :: Имя исходного исполняемого файла
 set TARGET="Импорт в Address List Mikrotik'а.exe"
